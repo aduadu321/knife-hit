@@ -19,15 +19,18 @@
         </div>
 
         <div id="start-screen" class="screen">
+            <div class="coins-header"><span id="coins-display">0</span> coins</div>
             <h1>KNIFE HIT</h1>
             <p class="subtitle">Tap to throw knives</p>
             <div class="high-score">Best: Stage <span id="best-stage">1</span></div>
             <button id="start-btn" class="btn">TAP TO PLAY</button>
+            <button id="shop-btn" class="btn btn-shop">SHOP</button>
         </div>
 
         <div id="stage-complete" class="screen hidden">
             <h2>STAGE CLEAR!</h2>
-            <div class="stage-score">+<span id="stage-points">100</span></div>
+            <div class="stage-score" id="stage-points">+100 points</div>
+            <div class="stage-coins" id="stage-coins">+5 coins</div>
             <p>Tap to continue</p>
         </div>
 
@@ -35,8 +38,18 @@
             <h2>GAME OVER</h2>
             <div class="final-score">Stage: <span id="final-stage">1</span></div>
             <div class="final-score">Score: <span id="final-score">0</span></div>
+            <div class="session-coins" id="session-coins">+0 coins</div>
             <button id="retry-btn" class="btn">TRY AGAIN</button>
             <button id="revive-btn" class="btn btn-secondary">WATCH AD TO CONTINUE</button>
+        </div>
+
+        <div id="shop-screen" class="screen hidden">
+            <div class="shop-header">
+                <h2>SHOP</h2>
+                <button id="close-shop" class="btn-close">X</button>
+            </div>
+            <div class="shop-coins">Coins: <span id="shop-coins-display">0</span></div>
+            <div id="shop-items" class="shop-container"></div>
         </div>
     </div>
 
