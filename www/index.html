@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>Knife Hit</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="gameCanvas"></canvas>
+
+        <div id="ui-overlay">
+            <div id="level-display">LEVEL <span id="level">1</span></div>
+            <div id="score-display">SCORE: <span id="score">0</span></div>
+            <div id="knives-left"></div>
+        </div>
+
+        <div id="start-screen" class="screen">
+            <h1>KNIFE HIT</h1>
+            <p class="subtitle">Tap to throw knives</p>
+            <div class="high-score">Best: Stage <span id="best-stage">1</span></div>
+            <button id="start-btn" class="btn">TAP TO PLAY</button>
+        </div>
+
+        <div id="stage-complete" class="screen hidden">
+            <h2>STAGE CLEAR!</h2>
+            <div class="stage-score">+<span id="stage-points">100</span></div>
+            <p>Tap to continue</p>
+        </div>
+
+        <div id="gameover-screen" class="screen hidden">
+            <h2>GAME OVER</h2>
+            <div class="final-score">Stage: <span id="final-stage">1</span></div>
+            <div class="final-score">Score: <span id="final-score">0</span></div>
+            <button id="retry-btn" class="btn">TRY AGAIN</button>
+            <button id="revive-btn" class="btn btn-secondary">WATCH AD TO CONTINUE</button>
+        </div>
+    </div>
+
+    <script src="js/game.js"></script>
+</body>
+</html>
